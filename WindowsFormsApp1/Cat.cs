@@ -1,4 +1,6 @@
-﻿namespace WindowsFormsApp1
+﻿using System.Collections.Generic;
+
+namespace WindowsFormsApp1
 {
     public class Cat : IAnimal
     {
@@ -15,9 +17,12 @@
         public string Breed { get; set; }
         public string Name { get; set; }
         public bool IsDomesticated { get; set; }
-        public string[] TricksLibrary { get; set; }
+        public List<string> TricksLibrary { get; set; }
 
-       
+        public void LearnNewTrick(string newTrick)
+        {
+            TricksLibrary.Add(newTrick);
+        }
 
         public string Speak()
         {

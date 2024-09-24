@@ -1,8 +1,9 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace WindowsFormsApp1
 {
-    public class Dog : AnimalBase, IAnimal
+    public class Dog : IAnimal
     {
 
         public Dog(string name, string breed) 
@@ -19,8 +20,13 @@ namespace WindowsFormsApp1
         public string Breed { get; set; }
         public string Name { get; set; }
         public bool IsDomesticated { get; set; }    
-        public string[] TricksLibrary { get; set; }
-        
+        public List<string> TricksLibrary { get; set; }
+
+        public void LearnNewTrick(string newTrick)
+        {
+            TricksLibrary.Add(newTrick);
+        }
+
 
         // methods or functions
         public string Speak()

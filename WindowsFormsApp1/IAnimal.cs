@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace WindowsFormsApp1
 {
@@ -10,7 +11,7 @@ namespace WindowsFormsApp1
         string Breed { get; set; }
         string Name { get; set; }
         bool IsDomesticated { get; set; }
-        string[] TricksLibrary { get; set; }
+        List<string> TricksLibrary { get; set; }
 
         // methods or functions
         string Speak();
