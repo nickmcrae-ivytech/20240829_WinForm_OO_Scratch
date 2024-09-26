@@ -3,6 +3,7 @@ using System.Linq;
 
 namespace WindowsFormsApp1
 {
+    // Hey I figured it out : )
     public interface IAnimal
     {
         // properties and/or attributes
