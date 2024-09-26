@@ -13,11 +13,13 @@ namespace WindowsFormsApp1
         public bool IsDomesticated { get; set; }
         public List<string> TricksLibrary { get; set; }
 
+        // overridable 
         public virtual void LearnNewTrick(string newTrick)
         {
             TricksLibrary.Add(newTrick);
         }
 
+        // overridable 
         public virtual string Speak()
         {
             return Sound;
