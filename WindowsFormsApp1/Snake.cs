@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
-    internal class Snake : AnimalBase
+    internal class Snake : Reptile
     {
         public Snake(string name)
+            : base(true)
         {
             NumberOfLegs = 0;
             Sound = "sssssss";
@@ -20,7 +21,10 @@ namespace WindowsFormsApp1
             if (TricksLibrary == null)
                 TricksLibrary = new List<string>();
 
-            TricksLibrary.Add("I'm a snake, I'm not gonna learn a trick...");
+            newTrick = "I'm a snake, I'm not gonna learn a trick...";
+
+            base.LearnNewTrick(newTrick);
+            ////TricksLibrary.Add("I'm a snake, I'm not gonna learn a trick...");
         }
     }
 }
