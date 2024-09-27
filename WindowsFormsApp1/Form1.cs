@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace WindowsFormsApp1
     {
         public List<IAnimal> Animals { get; set; }
         public IAnimal SelectedAnimal { get; set; }
+
 
         private enum AnimalsEnum
         {
@@ -44,7 +46,10 @@ namespace WindowsFormsApp1
 
             lblAnimalName.Text = string.Empty;
             lblDetails.Text = string.Empty;
+
         }
+
+
 
         private void btnSpeak_Click(object sender, EventArgs e)
         {
@@ -71,7 +76,10 @@ namespace WindowsFormsApp1
             SelectedAnimal = animal;
             lblAnimalName.Text = animal.Name;
 
+            
+
             var sb = new StringBuilder();
+            sb.AppendLine($"Animal Id: {animal.AnimalId}");
             sb.AppendLine($"Type: {animal.GetType().Name}");
             sb.AppendLine($"Sound: {animal.Sound}");
             sb.AppendLine($"Number of Legs: {animal.NumberOfLegs}");
@@ -85,8 +93,15 @@ namespace WindowsFormsApp1
 
         private void btnAddAnimal_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtName.Text))
+            if (txtName.Text.IsNotNil())
                 return;
+
+            var snake = new Snake("Jake");
+            snake.Name = txtName.Text;
+            //snake.AnimalId = txtName.Text;
+            //snake.GenerateAnimalId();
+            snake.Length = txtName.Text.Length;
+            snake.LearnNewTrick("");
 
             IAnimal newAnimal;
             switch (ddlAnimalTypes.SelectedValue)

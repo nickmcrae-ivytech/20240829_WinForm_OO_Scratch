@@ -7,6 +7,8 @@ namespace WindowsFormsApp1
     public interface IAnimal
     {
         // properties and/or attributes
+        string AnimalId { get; set; }
+
         string Sound { get; set; }
         int NumberOfLegs { get; set; }
         string Breed { get; set; }

@@ -48,40 +48,36 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(23, 34);
-            this.lblName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblName.Location = new System.Drawing.Point(12, 18);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(103, 37);
+            this.lblName.Size = new System.Drawing.Size(51, 20);
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Name";
             // 
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(138, 31);
-            this.txtName.Margin = new System.Windows.Forms.Padding(6);
+            this.txtName.Location = new System.Drawing.Point(69, 16);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(296, 44);
+            this.txtName.Size = new System.Drawing.Size(150, 26);
             this.txtName.TabIndex = 2;
             // 
             // lblResult
             // 
             this.lblResult.AutoSize = true;
             this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResult.Location = new System.Drawing.Point(748, 135);
-            this.lblResult.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblResult.Location = new System.Drawing.Point(374, 70);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(0, 51);
+            this.lblResult.Size = new System.Drawing.Size(0, 26);
             this.lblResult.TabIndex = 4;
             // 
             // lblAnimalName
             // 
             this.lblAnimalName.AutoSize = true;
             this.lblAnimalName.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnimalName.Location = new System.Drawing.Point(696, 26);
-            this.lblAnimalName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblAnimalName.Location = new System.Drawing.Point(348, 14);
             this.lblAnimalName.Name = "lblAnimalName";
-            this.lblAnimalName.Size = new System.Drawing.Size(410, 73);
+            this.lblAnimalName.Size = new System.Drawing.Size(212, 37);
             this.lblAnimalName.TabIndex = 6;
             this.lblAnimalName.Text = "animal name";
             // 
@@ -92,9 +88,11 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtName);
             this.groupBox1.Controls.Add(this.lblName);
-            this.groupBox1.Location = new System.Drawing.Point(46, 26);
+            this.groupBox1.Location = new System.Drawing.Point(23, 14);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(473, 277);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(236, 144);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add Animal";
@@ -104,9 +102,10 @@
             this.btnAddAnimal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnAddAnimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddAnimal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddAnimal.Location = new System.Drawing.Point(287, 179);
+            this.btnAddAnimal.Location = new System.Drawing.Point(144, 93);
+            this.btnAddAnimal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddAnimal.Name = "btnAddAnimal";
-            this.btnAddAnimal.Size = new System.Drawing.Size(147, 65);
+            this.btnAddAnimal.Size = new System.Drawing.Size(74, 34);
             this.btnAddAnimal.TabIndex = 9;
             this.btnAddAnimal.Text = "➕ Add";
             this.btnAddAnimal.UseVisualStyleBackColor = false;
@@ -116,28 +115,29 @@
             // 
             this.ddlAnimalTypes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ddlAnimalTypes.FormattingEnabled = true;
-            this.ddlAnimalTypes.Location = new System.Drawing.Point(138, 100);
+            this.ddlAnimalTypes.Location = new System.Drawing.Point(69, 52);
+            this.ddlAnimalTypes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ddlAnimalTypes.Name = "ddlAnimalTypes";
-            this.ddlAnimalTypes.Size = new System.Drawing.Size(296, 45);
+            this.ddlAnimalTypes.Size = new System.Drawing.Size(150, 28);
             this.ddlAnimalTypes.TabIndex = 9;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 100);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Location = new System.Drawing.Point(12, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 37);
+            this.label1.Size = new System.Drawing.Size(43, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "Type";
             // 
             // lstAnimals
             // 
             this.lstAnimals.HideSelection = false;
-            this.lstAnimals.Location = new System.Drawing.Point(46, 318);
+            this.lstAnimals.Location = new System.Drawing.Point(23, 165);
+            this.lstAnimals.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lstAnimals.Name = "lstAnimals";
-            this.lstAnimals.Size = new System.Drawing.Size(473, 327);
+            this.lstAnimals.Size = new System.Drawing.Size(238, 172);
             this.lstAnimals.TabIndex = 9;
             this.lstAnimals.UseCompatibleStateImageBehavior = false;
             // 
@@ -145,10 +145,9 @@
             // 
             this.lblDetails.AutoSize = true;
             this.lblDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDetails.Location = new System.Drawing.Point(702, 114);
-            this.lblDetails.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblDetails.Location = new System.Drawing.Point(351, 59);
             this.lblDetails.Name = "lblDetails";
-            this.lblDetails.Size = new System.Drawing.Size(181, 37);
+            this.lblDetails.Size = new System.Drawing.Size(90, 20);
             this.lblDetails.TabIndex = 10;
             this.lblDetails.Text = "animal dets";
             // 
@@ -157,9 +156,10 @@
             this.btnSpeak.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnSpeak.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSpeak.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSpeak.Location = new System.Drawing.Point(1181, 32);
+            this.btnSpeak.Location = new System.Drawing.Point(590, 17);
+            this.btnSpeak.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSpeak.Name = "btnSpeak";
-            this.btnSpeak.Size = new System.Drawing.Size(261, 65);
+            this.btnSpeak.Size = new System.Drawing.Size(130, 34);
             this.btnSpeak.TabIndex = 10;
             this.btnSpeak.Text = "🔊 Speak";
             this.btnSpeak.UseVisualStyleBackColor = false;
@@ -170,9 +170,10 @@
             this.btnNewTrick.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnNewTrick.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNewTrick.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewTrick.Location = new System.Drawing.Point(1181, 114);
+            this.btnNewTrick.Location = new System.Drawing.Point(590, 59);
+            this.btnNewTrick.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNewTrick.Name = "btnNewTrick";
-            this.btnNewTrick.Size = new System.Drawing.Size(261, 65);
+            this.btnNewTrick.Size = new System.Drawing.Size(130, 34);
             this.btnNewTrick.TabIndex = 11;
             this.btnNewTrick.Text = "➕ New Trick";
             this.btnNewTrick.UseVisualStyleBackColor = false;
@@ -182,19 +183,17 @@
             // 
             this.lblSpeak.AutoSize = true;
             this.lblSpeak.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSpeak.Location = new System.Drawing.Point(1174, 219);
-            this.lblSpeak.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblSpeak.Location = new System.Drawing.Point(587, 114);
             this.lblSpeak.Name = "lblSpeak";
-            this.lblSpeak.Size = new System.Drawing.Size(0, 37);
+            this.lblSpeak.Size = new System.Drawing.Size(0, 20);
             this.lblSpeak.TabIndex = 12;
-            this.lblSpeak.AutoSize = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(1600, 687);
+            this.ClientSize = new System.Drawing.Size(800, 357);
             this.Controls.Add(this.lblSpeak);
             this.Controls.Add(this.btnNewTrick);
             this.Controls.Add(this.btnSpeak);
@@ -204,7 +203,6 @@
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.groupBox1);
             this.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
             this.Text = "My Cool Form";
             this.Load += new System.EventHandler(this.Form1_Load);
